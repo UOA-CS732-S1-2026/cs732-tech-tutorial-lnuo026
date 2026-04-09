@@ -24,15 +24,17 @@ Both apps implement the same dog scene, so you can compare them line by line.
 - [Node.js](https://nodejs.org/) (v18 or above)
 
 ### For dog_app (React Native)
-- [Node.js](https://nodejs.org/) (v18 or above)                               
-- [Android Studio](https://developer.android.com/studio) — for the Android emulator 
-- After installing, open Android Studio → Virtual Device Manager → create a  device → start it
+- [Node.js](https://nodejs.org/) (v18 or above)
 
-- Or: install **Expo Go** on a real Android/iOS phone 
-- [Expo Go](https://expo.dev/go) 
-![Expo](./screenshots/Expo.jpg) 
+- **[Expo Go](https://expo.dev/go)** — install on your phone (iOS or Android)  
+  - Expo Go is recommended — lighter than Android Studio for a quick demo.
 
----             
+  - <img src="./screenshots/Expo.jpg" width="150px" /> 
+
+- [Android Studio](https://developer.android.com/studio) — optional, for Android emulator
+  - After installing, open Android Studio → Virtual Device Manager → create a device → start it
+
+--- 
 
 ## Getting Started
 
@@ -47,19 +49,23 @@ Then open http://localhost:xxxx  in your browser.
 --- 
 
 
-### Run the React Native version
+### Run the **React Native** version
 ```bash    
 cd dog_app
 npm install 
 npx expo start
 ```
 
-In the terminal, press:
-- Scan the QR code with Expo Go on a real phone                              
-- a — open on Android emulator (must have Android Studio set up)             
-- w - open  http://localhost:xxxx  in your browser.  
+In the terminal, test ways:
+1. **Scan the QR code with your phone camera — recommended** 
+    - Install Expo Go first, then scan the QR code with your phone camera and it launches automatically.
 
-![Express](./screenshots/express.png) 
+2. `w` — open in browser at http://localhost:xxxx、
+
+3. `a` — open on Android emulator (must have Android Studio set up)
+
+     <img src="./screenshots/express.png" width="150px" /> 
+
 
 ---  
 
@@ -72,7 +78,7 @@ In the terminal, press:
 - Tap the 🦴 refresh button to reposition the dog and change its animation
 - Tap the dog house to toggle a color change
 - Tap the sign board to open a message input, leave a note that appears on the sign
-- Tap the dog to trigger the run animation and a dialog bubble                 
+- Tap the dog to trigger a random animation and a dialog bubble                 
 
 ---                                                                          
 ### Key Concepts Covered
