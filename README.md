@@ -12,13 +12,14 @@ The demo consists of two side-by-side projects:
 
 Both apps implement the same dog scene, so you can compare them line by line. 
 
-## Demo         
+## 🐶🪵Demo
 ![demo](./screenshots/Demo.gif)  
 
 
---- 
+<br/>
 
 ## Prerequisites 
+👇 Before start, please make sure you have already installed the following tools:
 
 ### For dog_web
 - [Node.js](https://nodejs.org/) (v18 or above)
@@ -27,16 +28,18 @@ Both apps implement the same dog scene, so you can compare them line by line.
 - [Node.js](https://nodejs.org/) (v18 or above)
 
 - **[Expo Go](https://expo.dev/go)** — install on your phone (iOS or Android)  
-  - Expo Go is recommended — lighter than Android Studio for a quick demo.
+  - Expo Go is recommended🤓 — lighter than Android Studio for a quick demo.
 
   - <img src="./screenshots/Expo.jpg" width="150px" /> 
 
 - [Android Studio](https://developer.android.com/studio) — optional, for Android emulator
   - After installing, open Android Studio → Virtual Device Manager → create a device → start it
 
---- 
 
-## Getting Started
+<br/>
+
+
+## Getting Started🤓
 
 ### Run the web version
 ```bash 
@@ -46,29 +49,45 @@ npm run dev
 ```    
 Then open http://localhost:xxxx  in your browser.                              
 
---- 
+
 
 
 ### Run the **React Native** version
+1.Clone the project
+
+2.Navigate to the project directory
 ```bash    
 cd dog_app
+```
+3.Install npm package
+```bash
 npm install 
+```
+4.Run the application with expo
+```bash
 npx expo start
 ```
 
-In the terminal, test ways:
-1. **Scan the QR code with your phone camera — recommended** 
+5.In the terminal, test ways:
+
+>**_Screenshot_**
+
+<img src="./screenshots/express.png" width="150px" /> 
+
+ -  **Scan the QR code with your phone camera — recommended** 😤
     - Install Expo Go first, then scan the QR code with your phone camera and it launches automatically.
 
-2. `w` — open in browser at http://localhost:xxxx、
+ - `w` — open in browser at http://localhost:xxxx
 
-3. `a` — open on Android emulator (must have Android Studio set up)
-
-     <img src="./screenshots/express.png" width="150px" /> 
+ - `a` — open on Android emulator (must have Android Studio set up)
 
 
----  
 
+
+
+
+
+<br/>
 
 ## What the App Does
 
@@ -80,10 +99,12 @@ In the terminal, test ways:
 - Tap the sign board to open a message input, leave a note that appears on the sign
 - Tap the dog to trigger a random animation and a dialog bubble                 
 
----                                                                          
-### Key Concepts Covered
+                                                                
+<br/>
 
-## What's the **same** in React and React Native  
+## Key Concepts
+
+### What's the **same** in React and React Native  
 
 - `import` / `export` — Identical ES module syntax
 - JSX syntax — Components look the same
@@ -92,7 +113,7 @@ In the terminal, test ways:
 - TypeScript — `{ name: string }` works the same
 - All JS logic — Loops, conditions, functions, no difference 
 
-## What's **different**
+### What's **different**
 - `<div>` → `<View>`
 - `<p>`, `<span>` → `<Text>`
 - `<img src="...">` → `<Image source={require('...')}>`
@@ -104,7 +125,7 @@ In the terminal, test ways:
 - External `.css` file → `StyleSheet.create()`  
 
 
---- 
+<br/>
 
 ## Project Structure
 ```
@@ -123,7 +144,8 @@ dog_web/
 │   └── index.css                                                             
 └── public/
 ```  
---- 
+
+<br/>
 
 
 ## Code Comparison: Web React vs React Native   

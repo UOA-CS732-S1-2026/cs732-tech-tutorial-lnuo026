@@ -48,6 +48,9 @@ const DIALOGS = [
   "Hi, My name is Hammer!",
   "This is Nora's territory!",
   "Nora is fierce, how dare u!",
+  "Exterminate!",
+  "Exterminate!",
+  "Exterminate!",
   "Private property! No trespassing!",
   "Who are you? Leave your name!",
 ];
