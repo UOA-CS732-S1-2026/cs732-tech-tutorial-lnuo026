@@ -47,7 +47,7 @@ cd dog_web
 npm install
 npm run dev                     
 ```    
-Then open http://localhost:xxxx  in your browser.                              
+Then open the URL shown in your terminal (e.g. http://localhost:5173)    
 
 
 
@@ -55,29 +55,32 @@ Then open http://localhost:xxxx  in your browser.
 ### Run the **React Native** version
 1.Clone the project
 
-2.Navigate to the project directory
+2.Open the terminal and navigate to the project directory 
 ```bash    
 cd dog_app
 ```
+
 3.Install npm package
 ```bash
 npm install 
 ```
+
 4.Run the application with expo
 ```bash
 npx expo start
 ```
 
 5.In the terminal, test ways:
-
->**_Screenshot_**
+>**_Screenshot：_**
 
 <img src="./screenshots/express.png" width="150px" /> 
 
  -  **Scan the QR code with your phone camera — recommended** 😤
-    - Install Expo Go first, then scan the QR code with your phone camera and it launches automatically.
+    - install Expo Go first
+    - if iphone,scan the QR code with your phone camera directly and it launches automatically.
+    - else Android,open the Expo Go app，then using"Scan QR code" 
 
- - `w` — open in browser at http://localhost:xxxx
+ - `w` — open the URL shown in your terminal (e.g. http://localhost:5173)
 
  - `a` — open on Android emulator (must have Android Studio set up)
 
