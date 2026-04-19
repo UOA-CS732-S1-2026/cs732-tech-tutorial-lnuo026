@@ -90,7 +90,7 @@ Both `dog_web` and `dog_app` implement the same interactive dog scene. Here's wh
 
 ```bash
 git clone https://github.com/UOA-CS732-S1-2026/cs732-tech-tutorial-lnuo026.git
-cd React_Native
+cd cs732-tech-tutorial-lnuo026
 ```
 
 ### Step 2: Run the 🖥️Web Version(`dog_web`)
