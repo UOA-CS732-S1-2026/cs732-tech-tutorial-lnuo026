@@ -176,15 +176,11 @@ export default function HomeScreen() {
         onPress={handleDogPress}
         style={({ pressed }) => [
           styles.dog,
-          { left: dogX, top: dogY },
-          Platform.OS === "web"
-            ? ({
-                cursor: `url('/mouse.png'),auto`,
-              } as any)
-            : undefined,
+          { left: dogX, top: dogY, width: 300, height: 300},
           pressed && { opacity: 0.7, transform: [{ scale: 0.9 }] },
         ]}
       >
+
         <SpriteAnimation
           imagePath={currentAnim.path}
           frameCount={currentAnim.frameCount}
@@ -259,7 +255,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1 },
 
-  dog: { position: "absolute", overflow: "visible" },
+  dog: { position: "absolute", overflow: "hidden" ,zIndex: 1 },
   doghouse: {
     position: "absolute",
     right: 70,

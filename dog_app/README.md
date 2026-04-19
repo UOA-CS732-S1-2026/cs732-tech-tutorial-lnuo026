@@ -1,35 +1,4 @@
-# Compare between native and web react
-_Same_
-
-- `import` / `export`
-- JSX syntax
-- `useState` / `useEffect` / `useRef`
-- Props & Components
-- TypeScript
-- All your JavaScript logic
-
-
-
-- Pressable = clickable div / button
-- onPress = onclick
-- Text = web_p/span
-- TextInput = web_input
-- Modal = div + position: fixed
-
-
-_Different_
-
-- `<View>` - `<div>`
-- `<Image source={require()}>` - `<img src="">`
-- `onPress` - `onClick`
-- `Pressable` - `<button>`
-- `StyleSheet.create()` - CSS
-- No `px`
-
-
-
-
-
+# dog_app — React Native
 ## React Native Features Used
                                                                         
   - `Pressable` + `onPress` — Refresh button, dog house, sign board, dog
@@ -45,8 +14,8 @@ _Different_
 
 
 
----             
-## **index.tsx** detail explanation :
+
+# index.tsx detail explanation :
 
 ## Main component: `HomeScreen` (default export)                             
   This is the entry point of the app. Expo Router automatically renders it as   
@@ -82,8 +51,8 @@ _Different_
 - `handleRefresh` — Picks a random animation and repositions the dog
 - `handleDogPress` — Switches to run animation + shows dialog bubble for 3 seconds
 
-### Data Flow
 
+### Data Flow
 ```
 User taps refresh 
 → handleRefresh()

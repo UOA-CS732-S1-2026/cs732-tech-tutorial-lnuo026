@@ -49,7 +49,7 @@ import SpriteAnimation from './SpriteAnimation';
     const handleRefresh = () => {
       setCurrentAnim(ANIMATIONS[Math.floor(Math.random() * ANIMATIONS.length)]);
       setDogX(Math.random() * (window.innerWidth - 400));
-      setDogY(Math.random() * (window.innerHeight * 0.4));
+      setDogY(Math.random() * (window.innerHeight * 0.6));
     };
 
     const handleDogClick = () => {
@@ -72,8 +72,6 @@ import SpriteAnimation from './SpriteAnimation';
         ))}
 
 
-
-
         {/* Refresh button */}
         <div style={{ position: 'absolute',
                       top: 50,
@@ -92,10 +90,11 @@ import SpriteAnimation from './SpriteAnimation';
           </button>
         </div>
 
+
         {/* House */}
         <div onClick={() => setIsRed(!isRed)} style={{
           position: 'absolute', right: 170, bottom: 270,
-          width: 128, height: 128, overflow: 'hidden', cursor: 'pointer',
+          width: 128, height: 128, overflow: 'hidden', cursor: 'pointer',zIndex: 5
         }}>
           <img src="/assets/house/DOG_HOUSE.png" style={{
             width: 384, height: 128,
@@ -105,12 +104,11 @@ import SpriteAnimation from './SpriteAnimation';
 
 
 
-        {/*👇‼️👇  inlinecss */}
-
+        {/*👇‼️👇  inline Css */}
         <div onClick={() => setShowInput(true)} style={{
           position: 'absolute', right: 300, bottom: 260,
-          width: 64, height: 64, cursor: 'pointer', textAlign: 'center',
-        }}>1
+          width: 64, height: 64, cursor: 'pointer', textAlign: 'center',zIndex: 5
+        }}>
           <img src="/assets/sign/sign.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           {message && <div style={{ fontSize: 15, color: '#f0eaea', fontFamily: "'Press Start 2P', monospace" }}>{message.slice(0, 6)}</div>}
         </div>
@@ -131,6 +129,7 @@ import SpriteAnimation from './SpriteAnimation';
           />
         </div>
 
+
         {/* Dialog bubble */}
         {showDialog && (
           <div style={{
@@ -142,6 +141,7 @@ import SpriteAnimation from './SpriteAnimation';
             {DIALOGS[Math.floor(Math.random() * DIALOGS.length)]}
           </div>
         )}
+
 
         {/*👇‼️👇 Modal */}
         {showInput && (
